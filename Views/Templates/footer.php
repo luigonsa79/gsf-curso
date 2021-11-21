@@ -42,7 +42,7 @@
   </script>
   <!--cargar solo en la pagina page_functions_js personalizados desde el controlador-->
   <script src="
-    <?php echo media(); ?>/app/js/<?= $data['page_functions_js']; ?>"></script>
+    <?php echo media(); ?>/app/js/<?= $data['function_js']; ?>"></script>
   </body>
 
   </html>

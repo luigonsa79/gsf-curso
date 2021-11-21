@@ -1,3 +1,3 @@
 <?php 
 
-const base_url = 'http://localhost/gsf';
+const base_url = 'http://localhost/gsf-curso';
