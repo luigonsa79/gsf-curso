@@ -10,7 +10,7 @@ class Conexion
         try {
             $this->conect = new PDO($connectionString, DB_USER, DB_PASSWORD);
             $this->conect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            echo "Se ha conectado a la dB";
+            // echo "Se ha conectado a la dB";
 
         } catch (PDOException $e) {
             echo "ERROR: " . $e->getMessage();

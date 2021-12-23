@@ -7,7 +7,13 @@
           <li>
             <a href="<?php echo base_url();?>/Dashboard">
               <i class="fa fa-laptop"></i>
-              Dashboard <span class="label label-success pull-right">Analitics</span>
+              Dashboard
+            </a>
+          </li>
+          <li>
+            <a href="<?php echo base_url();?>/Roles">
+              <i class="fa fa-code-fork"></i>
+              Roles
             </a>
           </li>
 

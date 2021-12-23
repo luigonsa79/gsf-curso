@@ -1,6 +1,5 @@
 <?php
 headerAdmin($data);
-
 ?>
 
 <!-- page content -->
@@ -38,6 +37,7 @@ headerAdmin($data);
           <div class="x_content">
             Add content to the page ...
             Hola soy roles
+            <?php debug($data);?>
 
           </div>
         </div>
