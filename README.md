@@ -28,3 +28,10 @@ TODO
 
 1.Crear Modelo de RolesModel.php (Prueba de consulta desde model)
 2.Subir repositorio al git - Control de versiones.
+
+<!--  -->
+
+# VIDEO #5
+
+1.Crear clase para realizar CRUD en cualquier tabla de DB parte 1
+2.Subir repositorio al git - Control de versiones.

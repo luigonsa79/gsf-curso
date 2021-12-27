@@ -1,26 +1,26 @@
 <?php
-class RolesModel
+class RolesModel extends DB
 {
 
     public $id_rol;
     public $nombre_rol;
     public $estado_rol;
 
-    private $conexion;
+    
 
     public function __construct()
     {
-        $this->conexion = new Conexion();
-        $this->conexion =   $this->conexion->conect();
+       parent::__construct();
     }
 
 
     public function listRoles()
     {
-        $sql = $this->conexion->prepare("SELECT * FROM roles");
-        $sql->execute();
-        $data = $sql->fetchAll(PDO::FETCH_ASSOC);
-        return $data;
+
+        $sql = "SELECT * FROM roles WHERE estado_rol != 0";
+        $resp = $this->selectAll($sql);
+        return $resp;
+        
     }
 
 
