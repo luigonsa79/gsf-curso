@@ -10,7 +10,7 @@ class Roles extends Controller
 
     public function index()
     {   
-        $data['roles'] =  $this->model->listRoles();
+        $data['roles'] = RolesModel::listEqual('roles');
         $data['page_name'] = "Roles de usuarios";
         $this->views->getView($this,"index",$data);
     }

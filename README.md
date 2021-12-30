@@ -35,3 +35,10 @@ TODO
 
 1.Crear clase para realizar CRUD en cualquier tabla de DB parte 1
 2.Subir repositorio al git - Control de versiones.
+<!--  -->
+
+# VIDEO #6
+
+1.Crear clase para realizar CRUD en cualquier tabla de DB parte 2
+2.Mejorar el CRUD hacerlo más Dinámico
+3.Subir repositorio al git - Control de versiones.
