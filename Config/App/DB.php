@@ -29,13 +29,35 @@ class DB extends Conexion
 
         // call base de datos el query
         if (!$rows = parent::query($stmt, $params)) {
-           return false;
+            return false;
         }
 
         return $limit === 1 ? $rows[0] : $rows;
+    }
 
 
+    /**
+     *
+     * INSERTAR REGISTROS
+     *
+     */
 
+    public static function insert($table, $params)
+    {
+        $cols = "";
+        $placeholders = "";
+        foreach ($params as $key => $value) { // INSERT INTO roles(name_rol,estado_rol) VALUES (:name_rol,:estado_rol)
+            $cols .= "{$key} ,";
+            $placeholders .= ":{$key} ,";
+        }
+        $cols = substr($cols, 0, -1);
+        $placeholders = substr($placeholders, 0, -1);
+        $stmt = "INSERT INTO {$table}({$cols}) VALUES ({$placeholders})";
 
+        if ($id= parent::query($stmt,$params)) {
+            return $id;
+        }else{
+            return false;
+        }
     }
 }

@@ -1,4 +1,4 @@
-<?php 
+<?php
 class Roles extends Controller
 {
 
@@ -9,12 +9,18 @@ class Roles extends Controller
 
 
     public function index()
-    {   
-        $data['roles'] = RolesModel::listEqual('roles');
+    {
+        // SELECT
+        // $data['roles'] = RolesModel::listEqual('roles');
+        //INSERT
+        $datos = [
+            'nombre_rol' => 'Website',
+            'estado_rol' => 1
+        ];
+
+        RolesModel::insert('roles',$datos);
+        
         $data['page_name'] = "Roles de usuarios";
-        $this->views->getView($this,"index",$data);
+        $this->views->getView($this, "index", $data);
     }
-
-
-
 }

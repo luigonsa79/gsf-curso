@@ -48,7 +48,7 @@ class Conexion
         } elseif (strpos($sql, 'UPDATE') !== false) {
             $link->commit();
             return true;
-        }elseif (strpos($sql, 'UPDATE') !== false) {
+        }elseif (strpos($sql, 'DELETE') !== false) {
             if ($query->rowCount() > 0) {
                 $link->commit();
                 return true;

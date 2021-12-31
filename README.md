@@ -42,3 +42,11 @@ TODO
 1.Crear clase para realizar CRUD en cualquier tabla de DB parte 2
 2.Mejorar el CRUD hacerlo más Dinámico
 3.Subir repositorio al git - Control de versiones.
+<!--  -->
+
+# VIDEO #7
+
+2.Corregir errores
+    1a.Clase DB cambiar UPDATE a DELETE en la condicion
+2.Crear clase para realizar CRUD INSERT en cualquier tabla de DB parte 3
+3.Subir repositorio al git - Control de versiones.
