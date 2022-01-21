@@ -50,3 +50,8 @@ TODO
     1a.Clase DB cambiar UPDATE a DELETE en la condicion
 2.Crear clase para realizar CRUD INSERT en cualquier tabla de DB parte 3
 3.Subir repositorio al git - Control de versiones.
+
+# VIDEO #8
+
+1.Explicando el codigo de Consultas por medio de JOIN Relacionales
+2.Subir repositorio al git - Control de versiones.

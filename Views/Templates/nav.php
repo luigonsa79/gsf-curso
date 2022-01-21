@@ -23,6 +23,12 @@
             </ul>
           </li>
 
+          <li><a><i class="fa fa-product-hunt"></i> Productos <span class="fa fa-chevron-down"></span></a>
+            <ul class="nav child_menu">
+              <li><a href="<?php echo base_url();?>/Productos">Lista</a></li>
+            </ul>
+          </li>
+
           <li><a><i class="fa fa-table"></i> Catalogos <span class="fa fa-chevron-down"></span></a>
             <ul class="nav child_menu">
               <li><a href="index.html">Categorias</a></li>
