@@ -1,8 +1,6 @@
 <?php
 class DB extends Conexion
 {
-
-
     /**
      *
      * Listar registros desde la base de datos o un solo registro
@@ -34,7 +32,6 @@ class DB extends Conexion
 
         return $limit === 1 ? $rows[0] : $rows;
     }
-
 
     /**
      *
@@ -75,8 +72,6 @@ class DB extends Conexion
         return $limit === 1 ? $rows[0] : $rows;
     }
 
-
-
     /**
      *
      * INSERTAR REGISTROS
@@ -100,5 +95,40 @@ class DB extends Conexion
         } else {
             return false;
         }
+    }
+
+    /**
+     *
+     * UPDATE REGISTROS
+     *
+     */
+
+    public static function update($table, $params = [], $id = [])
+    {
+        // UPDATE productos SET nameProducto=:nameproducto, stock=:stock WHERE idProducto = 1 AND status = 1 AND
+        $cols = "";
+        $placeholders = "";
+        foreach ($params as $key => $value) {
+            $placeholders .= " {$key} = :{$key} ,";
+        }
+        $placeholders = substr($placeholders, 0, -1);
+
+        if (count($id) > 1) {
+            foreach ($id as $key => $value) {
+                $cols .= " $key = :$key AND";
+            }
+            $cols = substr($cols, 0, -3);
+        } else {
+            foreach ($id as $key => $value) {
+                $cols .= " $key = :$key";
+            }
+        }
+
+        $stmt = "UPDATE $table SET $placeholders WHERE $cols";
+        if (!parent::query($stmt, array_merge($params, $id))) {
+            return false;
+        }
+
+        return true;
     }
 }

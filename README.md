@@ -55,3 +55,8 @@ TODO
 
 1.Explicando el codigo de Consultas por medio de JOIN Relacionales
 2.Subir repositorio al git - Control de versiones.
+
+# VIDEO #9
+
+1.Crear metodo para actualizar
+2.Subir repositorio al git - Control de versiones.

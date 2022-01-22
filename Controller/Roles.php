@@ -12,7 +12,7 @@ class Roles extends Controller
     {
         // SELECT
         // $data['roles'] = RolesModel::listEqual('roles');
-		
+
         // INSERT
         // $datos = [
         //     'nombre_rol' => 'Website',
@@ -20,7 +20,13 @@ class Roles extends Controller
         // ];
 
         // RolesModel::insert('roles',$datos);
-        
+
+        // UPDATE
+        $Datosupdate = [
+            'nombre_rol' => 'Website UPDATE',
+        ];
+        RolesModel::update('roles',$Datosupdate,['id_rol' => 3]);
+
         $data['page_name'] = "Roles de usuarios";
         $this->views->getView($this, "index", $data);
     }
