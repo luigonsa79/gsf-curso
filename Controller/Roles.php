@@ -22,10 +22,14 @@ class Roles extends Controller
         // RolesModel::insert('roles',$datos);
 
         // UPDATE
-        $Datosupdate = [
-            'nombre_rol' => 'Website UPDATE',
-        ];
-        RolesModel::update('roles',$Datosupdate,['id_rol' => 3]);
+        // $Datosupdate = [
+        //     'nombre_rol' => 'Website UPDATE',
+        // ];
+        // RolesModel::update('roles',$Datosupdate,['id_rol' => 3]);
+
+        // DELETE
+        // $id_roles = 6;
+        // RolesModel::delete('roles', ['id_rol' => $id_roles]);
 
         $data['page_name'] = "Roles de usuarios";
         $this->views->getView($this, "index", $data);

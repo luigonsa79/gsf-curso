@@ -131,4 +131,30 @@ class DB extends Conexion
 
         return true;
     }
+
+    public static function delete($table, $params = [], $limit = 1)
+    {
+        // DELETE FROM roles WHERE id_rol = :idrol AND status = :status LIMIT 1
+        $cols_values = "";
+        $limits = "";
+        if (!empty($params)) {
+            $cols_values .= "WHERE";
+            foreach ($params as $key => $value) {
+                $cols_values .= " {$key} = :{$key} AND";
+            }
+            $cols_values = substr($cols_values, 0, -3);
+        }
+
+        if ($limit !== null) {
+            $limits = " LIMIT {$limit}";
+        }
+
+        $stmt = "DELETE FROM $table {$cols_values}{$limits}";
+
+        if (!$row = parent::query($stmt, $params)) {
+            return false;
+        }
+
+        return $row;
+    }
 }

@@ -60,3 +60,8 @@ TODO
 
 1.Crear metodo para actualizar
 2.Subir repositorio al git - Control de versiones.
+
+# VIDEO #10
+
+1.Crear metodo para eliminar
+2.Subir repositorio al git - Control de versiones.
