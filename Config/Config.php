@@ -14,16 +14,41 @@ const DB_PASSWORD = "";
 const DB_CHARSET = "utf8";
 
 /* ----------------------------------------------------- */
+/*             INFORMACION DEL SITIO                  */
+/* ----------------------------------------------------- */
+define('SITE_CHARSET', 'UTF-8');
+define('SITE_NAME', 'GSF-CURSO');
+define('SITE_VERSION', '1.0.0');
+define('SITE_LOGO', 'logo.png');
+define('SITE_FAVICON', 'favicon.ico');
+define('SITE_DESC', 'GSF FRAMEWORK');
+define('SITE_LOGO_MAIN', 'main.logo.png');
+
+/* ----------------------------------------------------- */
 /*             DIRECTORIOS DE LA APP                    */
 /* ----------------------------------------------------- */
 define('DS', DIRECTORY_SEPARATOR);
 define('ROOT', dirname(__DIR__));
 define('CONTROLLER', ROOT . DS . 'Controller');
+define('VIEW', ROOT . DS . "Views");
+define('TEMPLATE', VIEW . DS . "Templates");
+
+/* ----------------------------------------------------- */
+/*             ARCHIVOS PUBLICOS                         */
+/* ----------------------------------------------------- */
+define('ASSETS', base_url . '/Assets');
+define('CSS', ASSETS . "/css");
+define('JS', ASSETS . "/js");
+define('PLUGINS', ASSETS . "/plugins");
+define('FONTS', ASSETS . "/font-awesome");
+define('IMG', ASSETS . "/img");
+define('UPLOADS', ASSETS . "/uploads");
 
 
 /* ----------------------------------------------------- */
-/*              CONTROLLER Y METHOD DEFAULT              */
+/*              CONTROLLER - METHOD - ERORR DEFAULT              */
 /* ----------------------------------------------------- */
 
 define('CONTROLLER_DEFAULT', 'Login');
 define('METHOD_DEFAULT', 'index');
+define('CONTROLLER_ERROR', 'Error404');

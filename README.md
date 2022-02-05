@@ -71,3 +71,11 @@ TODO
 1.Creando constantes
 2.Mejorar la carga de URL en el index mediante las constantes
 3.Subir repositorio al git - Control de versiones.
+https://github.com/luigonsa79/gsf-curso/archive/refs/tags/video11.zip
+
+# VIDEO #12
+
+1.Creando constantes directorios
+2.Creando constantes archivos publicos
+3.Creando constantes informacion del sitio
+4.Subir repositorio al git - Control de versiones.

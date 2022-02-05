@@ -1,6 +1,7 @@
 <?php
 require_once('Config/Config.php');
 require_once 'Helpers/Helpers.php';
+echo UPLOADS;
 // $ruta = !empty($_GET['url']) ? $_GET['url'] : "Home/index";
 $ruta = !empty($_GET['url']) ? $_GET['url'] : CONTROLLER_DEFAULT . "/" . METHOD_DEFAULT;
 $array = explode("/", $ruta);
@@ -25,7 +26,7 @@ if (!empty($array[2])) {
 require_once 'Config/App/autoload.php';
 
 $dirController = CONTROLLER . "/" . $controller . ".php";
-$errorController = CONTROLLER . "/Error404.php";
+$errorController = CONTROLLER . "/" . CONTROLLER_ERROR . ".php";
 
 if (file_exists($dirController)) {
     require_once $dirController;
