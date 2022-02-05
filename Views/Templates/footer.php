@@ -13,25 +13,15 @@
 
   <!-- javascripts -->
   <!-- jQuery -->
-  <script src="
-    <?php echo media(); ?>/js/jquery.min.js">
-  </script>
+  <script src=" <?= JS ?>/jquery.min.js"></script>
   <!-- Bootstrap -->
-  <script src="
-    <?php echo media(); ?>/js/bootstrap.bundle.min.js">
-  </script>
+  <script src="<?= JS ?>/bootstrap.bundle.min.js"></script>
   <!-- FastClick -->
-  <script src="
-    <?php echo media(); ?>/js/fastclick.js">
-  </script>
+  <script src="<?= JS ?>/fastclick.js"></script>
   <!-- NProgress -->
-  <script src="
-    <?php echo media(); ?>/js/nprogress.js">
-  </script>
+  <script src="<?= JS ?>/nprogress.js"></script>
   <!-- Custom Theme Scripts -->
-  <script src="
-    <?php echo media(); ?>/js/custom.min.js">
-  </script>
+  <script src="<?= JS ?>/custom.min.js"></script>
 
 
 
@@ -41,8 +31,8 @@
     const base_url = "<?php echo base_url; ?>";
   </script>
   <!--cargar solo en la pagina page_functions_js personalizados desde el controlador-->
-  <script src="
-    <?php echo media(); ?>/app/js/<?= $data['function_js']; ?>"></script>
+  <script src="<?= ASSETS ?>/app/js/<?= $data['function_js']; ?>"></script>
+
   </body>
 
   </html>

@@ -79,3 +79,15 @@ https://github.com/luigonsa79/gsf-curso/archive/refs/tags/video11.zip
 2.Creando constantes archivos publicos
 3.Creando constantes informacion del sitio
 4.Subir repositorio al git - Control de versiones.
+https://github.com/luigonsa79/gsf-curso/archive/refs/tags/video12.zip
+
+
+# VIDEO #13
+
+1.Agregando funciones a nuestra clase helpers
+2.Subir repositorio al git - Control de versiones.
+
+# VIDEO #14
+
+1.Cargando el favicon desde una funcion php
+2.Subir repositorio al git - Control de versiones.

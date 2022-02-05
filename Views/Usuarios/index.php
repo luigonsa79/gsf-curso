@@ -1,5 +1,6 @@
 <?php
 headerAdmin($data);
+debug($data);
 
 ?>
 

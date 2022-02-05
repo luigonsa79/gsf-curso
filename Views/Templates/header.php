@@ -3,26 +3,20 @@
 
 <head>
     <meta charset="utf-8">
-    <link rel="shortcut icon" href="
-<?php echo media(); ?>/img/favicon-256x256.png">
+    <link rel="shortcut icon" href="<?= IMG ?>/favicon-256x256.png">
     <title><?php echo $data['page_name']; ?></title>
 
 
     <!-- Bootstrap -->
-    <link href="
-<?php echo media(); ?>/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?= CSS ?>/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
-    <link href="
-<?php echo media(); ?>/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="<?= FONTS ?>/css/font-awesome.min.css" rel="stylesheet">
     <!-- NProgress -->
-    <link href="
-<?php echo media(); ?>/css/nprogress/nprogress.css" rel="stylesheet">
+    <link href="<?= CSS ?>/nprogress.css" rel="stylesheet">
     <!-- Custom Theme Style -->
-    <link href="
-<?php echo media(); ?>/css/custom.min.css" rel="stylesheet">
+    <link href="<?= CSS ?>/custom.min.css" rel="stylesheet">
     <!-- Mis estilos -->
-    <link href="
-<?php echo media(); ?>/app/css/app.css" rel="stylesheet">
+    <link href="<?= ASSETS ?>/app/css/app.css" rel="stylesheet">
 
 </head>
 
@@ -40,7 +34,7 @@
                     <!-- menu profile quick info -->
                     <div class="profile clearfix">
                         <div class="profile_pic">
-                            <img src="<?php echo base_url(); ?>/assets/img/img.jpg" alt="foto del perfil" class="img-circle profile_img">
+                            <img src="<?= IMG ?>/img.jpg" alt="foto del perfil" class="img-circle profile_img">
                         </div>
                         <div class="profile_info">
                             <span>Bienvenido,</span>

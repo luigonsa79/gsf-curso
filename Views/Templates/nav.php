@@ -5,13 +5,13 @@
         <ul class="nav side-menu">
 
           <li>
-            <a href="<?php echo base_url();?>/Dashboard">
+            <a href="<?= base_url ?>/Dashboard">
               <i class="fa fa-laptop"></i>
               Dashboard
             </a>
           </li>
           <li>
-            <a href="<?php echo base_url();?>/Roles">
+            <a href="<?= base_url ?>/Roles">
               <i class="fa fa-code-fork"></i>
               Roles
             </a>
@@ -19,13 +19,13 @@
 
           <li><a><i class="fa fa-users"></i> Usuarios <span class="fa fa-chevron-down"></span></a>
             <ul class="nav child_menu">
-              <li><a href="<?php echo base_url();?>/Usuarios">Lista</a></li>
+              <li><a href="<?= base_url ?>/Usuarios">Lista</a></li>
             </ul>
           </li>
 
           <li><a><i class="fa fa-product-hunt"></i> Productos <span class="fa fa-chevron-down"></span></a>
             <ul class="nav child_menu">
-              <li><a href="<?php echo base_url();?>/Productos">Lista</a></li>
+              <li><a href="<?= base_url ?>/Productos">Lista</a></li>
             </ul>
           </li>
 
@@ -73,7 +73,7 @@
           <ul class=" navbar-right">
             <li class="nav-item dropdown open" style="padding-left: 15px;">
               <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
-                <img src="<?php echo media(); ?>/img/img.jpg" alt="">Usuario
+                <img src="<?= IMG ?>/img.jpg" alt="">Usuario
               </a>
               <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="javascript:;"> Perfil</a>

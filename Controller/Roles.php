@@ -32,6 +32,7 @@ class Roles extends Controller
         // RolesModel::delete('roles', ['id_rol' => $id_roles]);
 
         $data['page_name'] = "Roles de usuarios";
+        $data['function_js'] = "Roles.js";
         $this->views->getView($this, "index", $data);
     }
 }
