@@ -1,10 +1,12 @@
 <?php
 require_once('Config/Config.php');
 require_once 'Helpers/Helpers.php';
-$ruta = !empty($_GET['url']) ? $_GET['url'] : "Home/index";
+// $ruta = !empty($_GET['url']) ? $_GET['url'] : "Home/index";
+$ruta = !empty($_GET['url']) ? $_GET['url'] : CONTROLLER_DEFAULT . "/" . METHOD_DEFAULT;
 $array = explode("/", $ruta);
 $controller = $array[0];
-$metodo = "index";
+// $metodo = "index";
+$metodo = METHOD_DEFAULT;
 $parametro = "";
 if (!empty($array[1])) {
     if (!empty($array[1] != "")) {
@@ -22,17 +24,23 @@ if (!empty($array[2])) {
 
 require_once 'Config/App/autoload.php';
 
-$dirController = "Controller/".$controller.".php";
+$dirController = CONTROLLER . "/" . $controller . ".php";
+$errorController = CONTROLLER . "/Error404.php";
 
-if(file_exists($dirController)){
+if (file_exists($dirController)) {
     require_once $dirController;
     $controller = new $controller();
     if (method_exists($controller, $metodo)) {
         $controller->$metodo($parametro);
-    }else{
-        echo 'No existe el Metodo';
+    } else {
+        require_once $errorController;
+        $controller = new Error404;
+        $controller->index();
+        // echo 'No existe el Metodo';
     }
-    
-}else{
-    echo 'No existe el controlador';
+} else {
+    require_once $errorController;
+    $controller = new Error404;
+    $controller->index();
+    // echo 'No existe el controlador';
 }

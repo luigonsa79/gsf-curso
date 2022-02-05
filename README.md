@@ -65,3 +65,9 @@ TODO
 
 1.Crear metodo para eliminar
 2.Subir repositorio al git - Control de versiones.
+
+# VIDEO #11
+
+1.Creando constantes
+2.Mejorar la carga de URL en el index mediante las constantes
+3.Subir repositorio al git - Control de versiones.
