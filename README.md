@@ -92,3 +92,10 @@ https://github.com/luigonsa79/gsf-curso/archive/refs/tags/video13.zip
 
 1.Cargando el favicon desde una funcion php
 2.Subir repositorio al git - Control de versiones.
+https://github.com/luigonsa79/gsf-curso/archive/refs/tags/video14.zip
+
+# VIDEO #15
+
+1.Tabla de usuarios
+2.Respaldo de base de datos
+3.Subir repositorio al git - Control de versiones.
