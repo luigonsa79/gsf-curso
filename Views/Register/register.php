@@ -20,7 +20,7 @@
 
 <body class="text-center">
 
-  <form class="form-signin" novalidate>
+  <form class="form-signin" novalidate method="POST">
     <img class="mb-4" src="<?= get_logo() ?>" alt="" width="72" height="72">
 
     <h1 class="h3 mb-3 font-weight-normal">Registrarse</h1>
@@ -43,10 +43,13 @@
       <label for="rep_password" class="sr-only">Password</label>
       <input type="password" id="rep_password" name="rep_password" class="form-control" placeholder="Repita su contraseña" required>
     </div>
-    <button class="btn btn-lg btn-primary btn-block" type="submit">Registrase</button>
+    <button onclick="save();" class="btn btn-lg btn-primary btn-block" type="submit">Registrase</button>
     <p class="mt-2 mb-3 text-muted">&copy; 2021- <?= date('Y') ?></p>
 
   </form>
+
+  <!--cargar solo en la pagina page_functions_js personalizados desde el controlador-->
+  <script src="<?= ASSETS ?>/app/js/<?= $data['function_js']; ?>"></script>
 </body>
 
 </html>

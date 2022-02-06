@@ -113,3 +113,9 @@ https://github.com/luigonsa79/gsf-curso/archive/refs/tags/video16.zip
 2.Agregar SITE_DESC en el meta de login 
 3.Vista register 
 4.Subir repositorio al git - Control de versiones.
+https://github.com/luigonsa79/gsf-curso/archive/refs/tags/video17.zip
+
+# VIDEO #18
+
+1.Registrar usuario parte 1 
+2.Subir repositorio al git - Control de versiones.
