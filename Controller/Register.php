@@ -15,8 +15,12 @@ class Register extends Controller
 
   public function save()
   {
-    debug($_POST);
-
+    $data=[$_POST];
+    // debug($_POST);
+    
+    
+    
+    echo json_encode($data,JSON_UNESCAPED_UNICODE);
   }
 
 

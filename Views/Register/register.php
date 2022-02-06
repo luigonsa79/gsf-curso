@@ -20,7 +20,7 @@
 
 <body class="text-center">
 
-  <form class="form-signin" novalidate method="POST">
+  <form id="formRegister" class="form-signin" novalidate method="POST">
     <img class="mb-4" src="<?= get_logo() ?>" alt="" width="72" height="72">
 
     <h1 class="h3 mb-3 font-weight-normal">Registrarse</h1>
@@ -48,6 +48,10 @@
 
   </form>
 
+  <!-- Url para JavaScrip-->
+  <script>
+    const base_url = "<?php echo base_url; ?>";
+  </script>
   <!--cargar solo en la pagina page_functions_js personalizados desde el controlador-->
   <script src="<?= ASSETS ?>/app/js/<?= $data['function_js']; ?>"></script>
 </body>
