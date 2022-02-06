@@ -1,0 +1,10 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+ <title>GSF</title>
+
+ <g>
+  <title>Layer 1</title>
+  <text font-style="normal" font-weight="bold" transform="matrix(7.3137 0 0 5.64909 -2158.52 -1285.01)" stroke="#000" xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" id="svg_1" y="286.68737" x="325.21446" stroke-width="0" fill="#000000">GSF</text>
+  <rect stroke="#000" id="svg_2" height="188" width="28" y="173.33333" x="567" stroke-width="0" fill="#000000"/>
+  <rect transform="rotate(90 448 219.833)" id="svg_5" height="237" width="28" y="101.33333" x="434" stroke-width="0" stroke="#000" fill="#000000"/>
+ </g>
+</svg>
