@@ -106,3 +106,10 @@ https://github.com/luigonsa79/gsf-curso/archive/refs/tags/video15.zip
 1.Vista de login 
 2.Subir repositorio al git - Control de versiones.
 https://github.com/luigonsa79/gsf-curso/archive/refs/tags/video16.zip
+
+# VIDEO #17
+
+1.Crear funcion para cargar el logo dinamico  
+2.Agregar SITE_DESC en el meta de login 
+3.Vista register 
+4.Subir repositorio al git - Control de versiones.

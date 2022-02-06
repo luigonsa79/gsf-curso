@@ -60,3 +60,15 @@ function debug($data)
     $format .= print_r('</pre>');
     return $format;
 }
+
+function get_logo()
+{
+    $default_logo = SITE_LOGO;
+    $placeholder_image = 'https://via.placeholder.com/150x60';
+
+    if (!is_file(IMAGE_PATH . $default_logo)) {
+        return  $placeholder_image;
+    }
+
+    return IMG . $default_logo;
+}

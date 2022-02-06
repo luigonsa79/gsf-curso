@@ -12,4 +12,5 @@ class Login extends Controller
     $this->views->getView($this, 'index', $data);
   }
 
+
 }
