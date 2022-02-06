@@ -2,6 +2,7 @@
 
 const base_url = 'http://localhost/gsf-curso';
 
+define('SITE_LANG', 'es');
 
 /* ----------------------------------------------------- */
 /*             CONSTANTES PARA CONEXION DB                  */
@@ -20,7 +21,7 @@ define('SITE_CHARSET', 'UTF-8');
 define('SITE_NAME', 'GSF-CURSO');
 define('SITE_VERSION', '1.0.0');
 define('SITE_LOGO', 'logo.png');
-define('SITE_FAVICON', 'favicon.ico');
+define('SITE_FAVICON', 'android-icon-48x48.png');
 define('SITE_DESC', 'GSF FRAMEWORK');
 define('SITE_LOGO_MAIN', 'main.logo.png');
 
@@ -40,6 +41,7 @@ define('ASSETS', base_url . '/Assets');
 define('CSS', ASSETS . "/css");
 define('JS', ASSETS . "/js");
 define('PLUGINS', ASSETS . "/plugins");
+define('FAVICON', ASSETS . "/favicon/");
 define('FONTS', ASSETS . "/font-awesome");
 define('IMG', ASSETS . "/img");
 define('UPLOADS', ASSETS . "/uploads");

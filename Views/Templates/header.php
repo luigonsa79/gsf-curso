@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="SITE_LANG">
 
 <head>
-    <meta charset="utf-8">
-    <link rel="shortcut icon" href="<?= IMG ?>/favicon-256x256.png">
+    <meta charset="<?= SITE_CHARSET ?>">
+    <?= get_favicon(); ?>
     <title><?php echo $data['page_name']; ?></title>
 
 

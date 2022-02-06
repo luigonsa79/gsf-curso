@@ -86,6 +86,7 @@ https://github.com/luigonsa79/gsf-curso/archive/refs/tags/video12.zip
 
 1.Agregando funciones a nuestra clase helpers
 2.Subir repositorio al git - Control de versiones.
+https://github.com/luigonsa79/gsf-curso/archive/refs/tags/video13.zip
 
 # VIDEO #14
 

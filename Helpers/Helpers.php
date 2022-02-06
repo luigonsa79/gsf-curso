@@ -13,6 +13,46 @@ function footerAdmin($data = "")
     require_once($view_footer);
 }
 
+function get_favicon()
+{
+
+    $path = FAVICON; //path
+    $favicon = SITE_FAVICON;
+    $type = '';
+    $href = '';
+    $placeholder = '<link rel="shortcut icon" href="%s" type="%s">';
+
+    switch (pathinfo($path . $favicon, PATHINFO_EXTENSION)) {
+        case 'ico':
+            $type = 'image/vnd.microsoft.icon';
+            $href = $path . $favicon;
+            break;
+        case 'png':
+            $type = 'image/png';
+            $href = $path . $favicon;
+            break;
+        case 'gif':
+            $type = 'image/gif';
+            $href = $path . $favicon;
+            break;
+        case 'svg':
+            $type = 'image/svg+xml';
+            $href = $path . $favicon;
+            break;
+        case 'jpg':
+            $type = 'image/jpg';
+            $href = $path . $favicon;
+            break;
+
+
+        default:
+            return false;
+            break;
+    }
+
+    return sprintf($placeholder, $href, $type);
+}
+
 function debug($data)
 {
     $format = print_r('<pre>');
