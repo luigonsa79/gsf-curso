@@ -15,6 +15,8 @@
     <link href="<?= CSS ?>/nprogress.css" rel="stylesheet">
     <!-- Custom Theme Style -->
     <link href="<?= CSS ?>/custom.min.css" rel="stylesheet">
+    <!-- plugins -->
+    <link href="<?= PLUGINS ?>/noty/noty.css" rel="stylesheet">
     <!-- Mis estilos -->
     <link href="<?= ASSETS ?>/app/css/app.css" rel="stylesheet">
 

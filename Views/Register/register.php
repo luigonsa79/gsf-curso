@@ -14,6 +14,8 @@
   <link href="<?= CSS ?>/bootstrap.min.css" rel="stylesheet">
   <!-- Font Awesome -->
   <link href="<?= FONTS ?>/css/font-awesome.min.css" rel="stylesheet">
+  <!-- plugins -->
+  <link href="<?= PLUGINS ?>/noty/noty.css" rel="stylesheet">
 
   <link href="<?= CSS ?>/signin.css" rel="stylesheet">
 </head>
@@ -52,6 +54,8 @@
   <script>
     const base_url = "<?php echo base_url; ?>";
   </script>
+  <!-- plugins -->
+  <script src="<?= PLUGINS ?>/noty/noty.min.js"></script>
   <!--cargar solo en la pagina page_functions_js personalizados desde el controlador-->
   <script src="<?= ASSETS ?>/app/js/<?= $data['function_js']; ?>"></script>
 </body>

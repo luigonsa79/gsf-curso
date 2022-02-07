@@ -155,3 +155,14 @@ https://github.com/luigonsa79/gsf-curso/archive/refs/tags/video23.zip
 
 1.Registrar usuario parte 7 
 2.Subir repositorio al git - Control de versiones.
+https://github.com/luigonsa79/gsf-curso/archive/refs/tags/video24.zip
+
+# VIDEO #25
+
+1.Registrar usuario parte 8 -> integrando plugin alerta con noty 
+2.Subir repositorio al git - Control de versiones.
+
+# VIDEO #26 ^PENDIENTE^
+
+1.Registrar usuario parte 8 -> validando en el js y mandando alertas 
+2.Subir repositorio al git - Control de versiones.

@@ -22,6 +22,9 @@
   <script src="<?= JS ?>/nprogress.js"></script>
   <!-- Custom Theme Scripts -->
   <script src="<?= JS ?>/custom.min.js"></script>
+  
+  <!-- plugins -->
+  <script src="<?= PLUGINS ?>/noty/noty.min.js"></script>
 
 
 

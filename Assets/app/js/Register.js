@@ -8,6 +8,7 @@ document.addEventListener(
 
 async function save() {
   event.preventDefault();
+
   let formRegister = new FormData(document.querySelector("#formRegister"));
 
   try {
