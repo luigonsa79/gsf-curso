@@ -15,13 +15,20 @@ class Register extends Controller
 
   public function save()
   {
-    $data=[$_POST];
-    // debug($_POST);
+    $data = [];
+    $nombre = $_POST['nombre'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    $rep_password = $_POST['rep_password'];
+
+
+    if ($_SERVER['REQUEST_METHOD'] == "POST") {
+      $data = ['status' => true, 'msg' => 'Registro guardado'];
+    }
+
     
-    
-    
-    echo json_encode($data,JSON_UNESCAPED_UNICODE);
+
+
+    echo json_encode($data, JSON_UNESCAPED_UNICODE);
   }
-
-
 }
