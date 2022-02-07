@@ -72,3 +72,8 @@ function get_logo()
 
     return IMG . $default_logo;
 }
+
+function esc($str)
+{
+    return addslashes($str);
+}

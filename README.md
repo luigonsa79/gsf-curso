@@ -149,6 +149,7 @@ https://github.com/luigonsa79/gsf-curso/archive/refs/tags/video22.zip
 
 1.Registrar usuario parte 6 
 2.Subir repositorio al git - Control de versiones.
+https://github.com/luigonsa79/gsf-curso/archive/refs/tags/video23.zip
 
 # VIDEO #24
 

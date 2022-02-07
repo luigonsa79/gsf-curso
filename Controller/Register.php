@@ -23,12 +23,13 @@ class Register extends Controller
       $data = $errores;
 
       if (empty($errores)) {
+        $passHash = hash("sha256", esc($_POST['password']));
 
         $data = [
-          'id_rol' => 3,
-          'nombre' => $_POST['nombre'],
-          'email' => $_POST['email'],
-          'password' => $_POST['password'],
+          'id_rol'   => 3,
+          'nombre'   => esc($_POST['nombre']),
+          'email'    => esc($_POST['email']),
+          'password' => $passHash,
         ];
 
         $idInsert = RegisterModel::insert('usuarios', $data);
