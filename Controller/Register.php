@@ -23,11 +23,19 @@ class Register extends Controller
 
 
     if ($_SERVER['REQUEST_METHOD'] == "POST") {
-      $data = ['status' => true, 'msg' => 'Registro guardado'];
+
+      // validar
+      if (!$nombre != '' || !$email != '' || !$password != '' || !$rep_password != '') {
+        $data = ['status' => false, 'msg' => 'Es necesario este campo'];
+      } else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $data = ['status' => false, 'msg' => 'Correo no valido'];
+      }else if (strlen($password) <= 5) {
+        $data = ['status' => false, 'msg' => 'El password es muy corto'];
+      }
+       else {
+        $data = ['status' => true, 'msg' => 'Registro guardado'];
+      }
     }
-
-    
-
 
     echo json_encode($data, JSON_UNESCAPED_UNICODE);
   }
