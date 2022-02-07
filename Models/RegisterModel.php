@@ -15,6 +15,10 @@ class RegisterModel extends DB
     $password = $_POST['password'];
     $rep_password = $_POST['rep_password'];
 
+    if ($password != $rep_password) {
+      $errores = ['error' => 'Los password no son iguales'];
+    }
+
     if (strlen($password) <= 5) {
       $errores = ['error' => 'El password es muy corto'];
     }

@@ -23,10 +23,17 @@ class Register extends Controller
       $data = $errores;
 
       if (empty($errores)) {
+
+        $data = [
+          'id_rol' => 3,
+          'nombre' => $_POST['nombre'],
+          'email' => $_POST['email'],
+          'password' => $_POST['password'],
+        ];
+
+        $idInsert = RegisterModel::insert('usuarios', $data);
         $data = ['status' => true, 'msg' => 'Registro guardado'];
       }
-      
-
     }
 
     echo json_encode($data, JSON_UNESCAPED_UNICODE);
