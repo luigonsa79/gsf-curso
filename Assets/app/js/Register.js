@@ -8,20 +8,39 @@ document.addEventListener(
 
 async function save() {
   event.preventDefault();
-
-  let formRegister = new FormData(document.querySelector("#formRegister"));
+  formRegister = document.querySelector("#formRegister")
+  let datos = new FormData(formRegister);
 
   try {
     const url = `${base_url}/Register/save`;
 
     const respuesta = await fetch(url, {
       method: "POST",
-      body: formRegister,
+      body: datos,
     });
 
     const resultado = await respuesta.json();
 
-    console.log(resultado);
+    if (resultado.status) {
+      new Noty({
+        type: 'success',
+        text: `${resultado.msg}`,
+        layout: "topCenter",
+        theme: "metroui",
+        timeout: 1500
+      }).show();
+      formRegister.reset();
+    }else{
+      new Noty({
+        type: 'error',
+        text: `${resultado.error}`,
+        layout: "topCenter",
+        theme: "metroui",
+        timeout: 1500
+      }).show();
+    }
+
+
   } catch (err) {
     console.log(err);
   }

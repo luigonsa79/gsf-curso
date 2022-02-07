@@ -28,7 +28,7 @@ class RegisterModel extends DB
     }
 
     if (!$nombre != '' || !$email != '' || !$password != '' || !$rep_password != '') {
-      $errores = ['error' => 'Es necesario este campo'];
+      $errores = ['error' => 'Todos los campos son obligatorios'];
     }
 
     return $errores;

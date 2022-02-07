@@ -48,6 +48,7 @@
     <button onclick="save();" class="btn btn-lg btn-primary btn-block" type="submit">Registrase</button>
     <p class="mt-2 mb-3 text-muted">&copy; 2021- <?= date('Y') ?></p>
 
+    <a href="<?=base_url?>/Login">Iniciar Session</a>
   </form>
 
   <!-- Url para JavaScrip-->
