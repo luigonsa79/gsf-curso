@@ -73,7 +73,11 @@ function get_logo()
     return IMG . $default_logo;
 }
 
-function esc($str)
+function limpiar($datos)
 {
-    return addslashes($str);
+    $datos = trim($datos);
+    $datos = htmlspecialchars($datos, ENT_QUOTES, 'UTF-8');
+    $datos = utf8_decode($datos);
+
+    return $datos;
 }

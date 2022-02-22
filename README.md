@@ -167,8 +167,24 @@ https://github.com/luigonsa79/gsf-curso/archive/refs/tags/video25.zip
 
 1.Registrar usuario parte 9 -> validando en el js y mandando alertas 
 2.Subir repositorio al git - Control de versiones.
+https://github.com/luigonsa79/gsf-curso/archive/refs/tags/video26.zip
 
-# VIDEO #27 ^PENDIENTE^
+# VIDEO #27
 
-1.Sistema de login de usuario 
+1.Mejorar el la function esc de helper para eliminar espacios vacios con rtrim o trim 
+2.Subir repositorio al git - Control de versiones.
+
+# VIDEO #28 ^PENDIENTE^
+
+1.Crear clase de validacion para usar en controllers
+2.Subir repositorio al git - Control de versiones.
+
+# VIDEO #29 ^PENDIENTE^
+
+1.Validar registro en js y crear clase de helpers.js
+2.Subir repositorio al git - Control de versiones.
+
+# VIDEO #30 ^PENDIENTE^
+
+1.Sistema de login de usuario parte 1
 2.Subir repositorio al git - Control de versiones.

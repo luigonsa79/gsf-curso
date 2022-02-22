@@ -21,14 +21,14 @@ class Register extends Controller
       // validar
       $errores = RegisterModel::validar();
       $data = $errores;
-
+      
       if (empty($errores)) {
-        $passHash = hash("sha256", esc($_POST['password']));
+        $passHash = hash("sha256", limpiar($_POST['password']));
 
         $data = [
           'id_rol'   => 3,
-          'nombre'   => esc($_POST['nombre']),
-          'email'    => esc($_POST['email']),
+          'nombre'   => limpiar($_POST['nombre']),
+          'email'    => limpiar($_POST['email']),
           'password' => $passHash,
         ];
 
