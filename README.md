@@ -173,6 +173,7 @@ https://github.com/luigonsa79/gsf-curso/archive/refs/tags/video26.zip
 
 1.Mejorar el la function esc de helper para eliminar espacios vacios con rtrim o trim 
 2.Subir repositorio al git - Control de versiones.
+https://github.com/luigonsa79/gsf-curso/archive/refs/tags/video27.zip
 
 # VIDEO #28 ^PENDIENTE^
 
