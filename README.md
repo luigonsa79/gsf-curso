@@ -175,17 +175,25 @@ https://github.com/luigonsa79/gsf-curso/archive/refs/tags/video26.zip
 2.Subir repositorio al git - Control de versiones.
 https://github.com/luigonsa79/gsf-curso/archive/refs/tags/video27.zip
 
-# VIDEO #28 ^PENDIENTE^
+# VIDEO #28 #29 #30
 
 1.Crear clase de validacion para usar en controllers
 2.Subir repositorio al git - Control de versiones.
 
-# VIDEO #29 ^PENDIENTE^
+
+1.Rectificar la funcion displayError agregando el .= en la variable html y cambiar a Validation la clase
+2.Error en esta linea 56 $regex = '/^(' . $this->pattern[$name] . ')$/u'; cambiar a $regex = '/^(' . $this->patterns[$name] . ')$/u'; (pattern es con s patterns)
+3.La palabra se escribe booelan
+4.function value($value) modificar: tiene que retornar la funcion $this y la function name($name) tambien retunr $this
+5.Probando la clase en el controlador de register
+6.Subir repositorio al git - Control de versiones.
+
+# VIDEO #31 ^PENDIENTE^
 
 1.Validar registro en js y crear clase de helpers.js
 2.Subir repositorio al git - Control de versiones.
 
-# VIDEO #30 ^PENDIENTE^
+# VIDEO #32 ^PENDIENTE^
 
 1.Sistema de login de usuario parte 1
 2.Subir repositorio al git - Control de versiones.

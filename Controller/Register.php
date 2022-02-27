@@ -19,22 +19,28 @@ class Register extends Controller
 
     if ($_SERVER['REQUEST_METHOD'] == "POST") {
       // validar
-      $errores = RegisterModel::validar();
-      $data = $errores;
-      
-      if (empty($errores)) {
-        $passHash = hash("sha256", limpiar($_POST['password']));
+      $val = new Validations();
+      $val->name('nombre')->value(limpiar($_POST['nombre']))->required();
+      $val->name('email')->value(limpiar($_POST['email']))->pattern('email')->required();
+      $val->name('password')->value(limpiar($_POST['password']))->min(5)->max(20)->pattern('alphanum')->equal(limpiar($_POST['rep_password']))->required();
 
+      if($val->isSuccess()){
+        $passHash = hash("sha256", limpiar($_POST['password']));
+  
         $data = [
           'id_rol'   => 3,
           'nombre'   => limpiar($_POST['nombre']),
           'email'    => limpiar($_POST['email']),
           'password' => $passHash,
         ];
-
         $idInsert = RegisterModel::insert('usuarios', $data);
         $data = ['status' => true, 'msg' => 'Registro guardado'];
+      }else{
+        $data = ['error' => $val->getErrors()];
+
       }
+
+     
     }
 
     echo json_encode($data, JSON_UNESCAPED_UNICODE);
