@@ -21,14 +21,15 @@
 </head>
 
 <body class="text-center">
+  <?php $val = new Validations; ?>
 
   <form id="formRegister" class="form-signin" novalidate method="POST">
     <img class="mb-4" src="<?= get_logo() ?>" alt="" width="72" height="72">
 
     <h1 class="h3 mb-3 font-weight-normal">Registrarse</h1>
     <div class="mt-2">
-      <label for="nombre" class="sr-only">Correo</label>
-      <input type="nombre" id="nombre" name="nombre" class="form-control" placeholder="Ingrese su nombre" required autofocus>
+      <label for="nombre" class="sr-only">Nombre</label>
+      <input type="nombre" id="nombre" name="nombre" class="form-control" placeholder="Ingrese su nombre" pattern="<?php echo $val->patterns['tel']; ?>" required autofocus>
     </div>
 
     <div class="mt-2">

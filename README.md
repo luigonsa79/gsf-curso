@@ -187,10 +187,11 @@ https://github.com/luigonsa79/gsf-curso/archive/refs/tags/video27.zip
 4.function value($value) modificar: tiene que retornar la funcion $this y la function name($name) tambien retunr $this
 5.Probando la clase en el controlador de register
 6.Subir repositorio al git - Control de versiones.
+https://github.com/luigonsa79/gsf-curso/archive/refs/tags/VIDEO-28-29-30.zip
 
-# VIDEO #31 ^PENDIENTE^
+# VIDEO #31
 
-1.Validar registro en js y crear clase de helpers.js
+1.Tabla PERMISOS DE USUARIOS y MODULOS - PHP POO MVC MYSQL  FETCH JAVASCRIPT
 2.Subir repositorio al git - Control de versiones.
 
 # VIDEO #32 ^PENDIENTE^

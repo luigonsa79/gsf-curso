@@ -51,13 +51,15 @@ class Validations
     if ($name == 'array') {
 
             if (!is_array($this->value)) {
-                $this->errors[] = 'Formato del campo ' . $this->name . ' no es valido.';
+                // $this->errors[] = 'Formato del campo ' . $this->name . ' no es valido.';
+                $this->errors[] = nl2br("Formato del campo $this->name no es valido \n ");
             }
         } else {
 
             $regex = '/^(' . $this->patterns[$name] . ')$/u';
             if ($this->value != '' && !preg_match($regex, $this->value)) {
-                $this->errors[] = 'Formato del campo ' . $this->name . ' no es valido.';
+                // $this->errors[] = 'Formato del campo ' . $this->name . ' no es valido.';
+                $this->errors[] = nl2br("Formato del campo $this->name no es valido \n ");
             }
         }
         return $this;
@@ -74,7 +76,8 @@ class Validations
   {
     $regex  = '/^(' . $pattern . ')$/u';
     if ($this->value != '' && !preg_match($regex, $this->value)) {
-      $this->errors[] = 'Formato del campo ' . $this->name . ' no es valido';
+      // $this->errors[] = 'Formato del campo ' . $this->name . ' no es valido';
+      $this->errors[] = nl2br("Formato del campo $this->name no es valido \n ");
     }
     return $this;
   }
@@ -89,7 +92,7 @@ class Validations
   public function required()
   {
     if ($this->value == '' || $this->value == null) {
-      $this->errors[] = 'El campo ' . $this->name . ' es requerido';
+      $this->errors[] = nl2br("El campo $this->name es requerido \n ");
     }
     return $this;
   }
@@ -107,11 +110,13 @@ class Validations
     if (is_string($this->value)) {
 
       if (strlen($this->value) < $length) {
-        $this->errors[] = 'El campo ' . $this->name . ' es inferior al valor minimo permitido';
+        // $this->errors[] = 'El campo ' . $this->name . ' es inferior al valor minimo permitido';
+        $this->errors[] = nl2br("El campo $this->name es inferior al valor minimo permitido \n ");
       }
     } else {
       if ($this->value < $length) {
-        $this->errors[] = 'El campo ' . $this->name . ' es inferior al valor minimo permitido';
+        // $this->errors[] = 'El campo ' . $this->name . ' es inferior al valor minimo permitido';
+        $this->errors[] = nl2br("El campo $this->name es inferior al valor minimo permitido \n ");
       }
     }
 
@@ -130,11 +135,13 @@ class Validations
     if (is_string($this->value)) {
 
       if (strlen($this->value) > $length) {
-        $this->errors[] = 'El campo ' . $this->name . ' es mayor al valor maximo permitido';
+        // $this->errors[] = 'El campo ' . $this->name . ' es mayor al valor maximo permitido';
+        $this->errors[] = nl2br("El campo $this->name es mayor al valor maximo permitido \n ");
       }
     } else {
       if ($this->value > $length) {
-        $this->errors[] = 'El campo ' . $this->name . ' es mayor al valor maximo permitido';
+        // $this->errors[] = 'El campo ' . $this->name . ' es mayor al valor maximo permitido';
+        $this->errors[] = nl2br("El campo $this->name es mayor al valor maximo permitido \n ");
       }
     }
 
@@ -152,7 +159,8 @@ class Validations
   public function equal($value)
   {
     if ($this->value != $value) {
-      $this->errors[] = 'El valor del campo ' . $this->name . ' no coincide';
+      // $this->errors[] = 'El valor del campo ' . $this->name . ' no coincide';
+      $this->errors[] = nl2br("El valor del campo $this->name no coincide \n ");
     }
     return $this;
   }
@@ -275,7 +283,7 @@ class Validations
       foreach ($this->getErrors() as $error) {
         echo "$error\n";
       }
-      
+      exit;
     } else {
       return true;
     }

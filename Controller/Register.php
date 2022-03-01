@@ -28,7 +28,6 @@ class Register extends Controller
         $passHash = hash("sha256", limpiar($_POST['password']));
   
         $data = [
-          'id_rol'   => 3,
           'nombre'   => limpiar($_POST['nombre']),
           'email'    => limpiar($_POST['email']),
           'password' => $passHash,
