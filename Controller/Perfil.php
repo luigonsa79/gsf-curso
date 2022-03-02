@@ -1,6 +1,13 @@
 <?php
 class Perfil extends Controller
 {
+    public function __construct()
+    {
+        if (!isset($_SESSION['login'])) {
+            header('Location:' . base_url . '/login');
+        }
+        parent::__construct();
+    }
 
 
     public function index()

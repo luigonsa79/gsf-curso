@@ -80,7 +80,7 @@
                 <a class="dropdown-item" href="javascript:;">
                   <span>Config</span>
                 </a>
-                <a class="dropdown-item" href="login.html"><i class="fa fa-sign-out pull-right"></i> Salir</a>
+                <a class="dropdown-item" href="<?= base_url ?>/logout"><i class="fa fa-sign-out pull-right"></i> Salir</a>
               </div>
             </li>
           </ul>

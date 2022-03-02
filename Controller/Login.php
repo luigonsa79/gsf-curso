@@ -3,6 +3,9 @@ class Login extends Controller
 {
   public function __construct()
   {
+    if (isset($_SESSION['login'])) {
+      header('Location:' . base_url . '/perfil');
+    }
     parent::__construct();
   }
 
@@ -31,7 +34,11 @@ class Login extends Controller
           $arrJson = ['error' => 'Estas credenciales no exiten en nuestro sistema o el usuario no existe'];
         } else {
           // crear nuestras sessiones
-          
+          $_SESSION['iduser'] = $usuario['id_usuario'];
+          $_SESSION['nombre'] = $usuario['nombre'];
+          $_SESSION['email'] = $usuario['email'];
+          $_SESSION['login'] = true;
+
           $arrJson = ['msg' => 'El usuario se ha logeado'];
         }
       } else {
