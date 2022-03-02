@@ -3,9 +3,7 @@ class Perfil extends Controller
 {
     public function __construct()
     {
-        if (!isset($_SESSION['login'])) {
-            header('Location:' . base_url . '/login');
-        }
+        Auth::noAuth();
         parent::__construct();
     }
 

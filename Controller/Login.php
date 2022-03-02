@@ -22,8 +22,10 @@ class Login extends Controller
 
     if ($_SERVER['REQUEST_METHOD'] == "POST") {
       $val = new Validations();
-      $val->name('email')->value($_POST['email'])->required();
-      $val->name('password')->value($_POST['password'])->required();
+
+      $val->name('email')->value(limpiar($_POST['email']))->pattern('email')->required();
+      $val->name('password')->value(limpiar($_POST['password']))->min(5)->max(20)->pattern('alphanum')->required();
+
 
       // si todo esta bien se logea
       if ($val->isSuccess()) {

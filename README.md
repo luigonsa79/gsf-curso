@@ -205,3 +205,10 @@ https://github.com/luigonsa79/gsf-curso/archive/refs/tags/video32,33.zip
 
 1.Restringuir paginas mediante las variables de sessiones
 2.Subir repositorio al git - Control de versiones.
+https://github.com/luigonsa79/gsf-curso/archive/refs/tags/video34.zip
+
+# VIDEO #35
+
+1.Clase auth para restringir accesos
+2.Mejorando la validacion del login
+3.Subir repositorio al git - Control de versiones.
