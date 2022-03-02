@@ -12,6 +12,8 @@
 
   <!-- Bootstrap -->
   <link href="<?= CSS ?>/bootstrap.min.css" rel="stylesheet">
+  <!-- plugins -->
+  <link href="<?= PLUGINS ?>/noty/noty.css" rel="stylesheet">
   <!-- Font Awesome -->
   <link href="<?= FONTS ?>/css/font-awesome.min.css" rel="stylesheet">
 
@@ -20,7 +22,7 @@
 
 <body class="text-center">
 
-  <form class="form-signin" novalidate>
+  <form id="loginForm" method="POST" class="form-signin" novalidate>
     <img class="mb-4" src="<?= get_logo() ?>" alt="" width="72" height="72">
 
     <h1 class="h3 mb-3 font-weight-normal">Iniciar session</h1>
@@ -37,6 +39,16 @@
     <a href="<?= base_url ?>/Register">Registrase</a>
 
   </form>
+
+
+  <!-- Url para JavaScrip-->
+  <script>
+    const base_url = "<?php echo base_url; ?>";
+  </script>
+  <!-- plugins -->
+  <script src="<?= PLUGINS ?>/noty/noty.min.js"></script>
+  <!--cargar solo en la pagina page_functions_js personalizados desde el controlador-->
+  <script src="<?= ASSETS ?>/app/js/<?= $data['function_js']; ?>"></script>
 </body>
 
 </html>
