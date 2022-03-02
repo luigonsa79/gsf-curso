@@ -48,6 +48,8 @@ headerAdmin($data);
           </div>
           <div class="x_content">
            Pagina de perfil del usuario
+           
+           <?php Permisos::getPermiso(1);?>
           </div>
         </div>
       </div>

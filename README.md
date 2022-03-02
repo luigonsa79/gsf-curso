@@ -212,3 +212,9 @@ https://github.com/luigonsa79/gsf-curso/archive/refs/tags/video34.zip
 1.Clase auth para restringir accesos
 2.Mejorando la validacion del login
 3.Subir repositorio al git - Control de versiones.
+https://github.com/luigonsa79/gsf-curso/archive/refs/tags/video35.zip
+
+# VIDEO #36
+
+1.Clase de permisos para validar los permisos de los usuarios parte 1
+2.Subir repositorio al git - Control de versiones.

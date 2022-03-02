@@ -4,6 +4,7 @@ class Perfil extends Controller
     public function __construct()
     {
         Auth::noAuth();
+       
         parent::__construct();
     }
 

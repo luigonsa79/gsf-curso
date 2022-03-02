@@ -3,6 +3,13 @@
       <div class="menu_section">
         <h3>Administracion GSF</h3>
         <ul class="nav side-menu">
+          <li>
+            <a href="<?= base_url ?>/Perfil">
+              <i class="fa fa-cogs"></i>
+              Perfil
+            </a>
+          </li>
+
 
           <li>
             <a href="<?= base_url ?>/Dashboard">
@@ -10,6 +17,7 @@
               Dashboard
             </a>
           </li>
+
           <li>
             <a href="<?= base_url ?>/Roles">
               <i class="fa fa-code-fork"></i>
