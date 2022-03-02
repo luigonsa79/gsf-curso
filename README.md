@@ -200,3 +200,8 @@ https://github.com/luigonsa79/gsf-curso/archive/refs/tags/video31.zip
 1.Sistema de login de usuario parte 1 y 2
 2.Subir repositorio al git - Control de versiones.
 https://github.com/luigonsa79/gsf-curso/archive/refs/tags/video32,33.zip
+
+# VIDEO #34
+
+1.Restringuir paginas mediante las variables de sessiones
+2.Subir repositorio al git - Control de versiones.
