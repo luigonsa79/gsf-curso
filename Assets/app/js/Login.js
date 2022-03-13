@@ -34,7 +34,6 @@ async function login() {
       setTimeout(() => {
         window.location.href = `${base_url}/perfil`;
       }, 1500);
-
     }
   } catch (err) {
     console.log(err);

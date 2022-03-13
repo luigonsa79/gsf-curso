@@ -216,5 +216,6 @@ https://github.com/luigonsa79/gsf-curso/archive/refs/tags/video35.zip
 
 # VIDEO #36
 
-1.Clase de permisos para validar los permisos de los usuarios parte 1
+1.Clase de permisos para validar los permisos de los usuarios
 2.Subir repositorio al git - Control de versiones.
+https://github.com/luigonsa79/gsf-curso/archive/refs/tags/video36.zip

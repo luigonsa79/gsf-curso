@@ -5,46 +5,54 @@
         <ul class="nav side-menu">
           <li>
             <a href="<?= base_url ?>/Perfil">
+              <!-- todos entran -->
               <i class="fa fa-cogs"></i>
               Perfil
             </a>
           </li>
 
+          <?php if (!empty($_SESSION['permisos'][2]['r'])) : ?>
+            <li>
+              <a href="<?= base_url ?>/Dashboard">
+                <i class="fa fa-laptop"></i>
+                Dashboard
+              </a>
+            </li>
+          <?php endif ?>
 
-          <li>
-            <a href="<?= base_url ?>/Dashboard">
-              <i class="fa fa-laptop"></i>
-              Dashboard
-            </a>
-          </li>
 
-          <li>
-            <a href="<?= base_url ?>/Roles">
-              <i class="fa fa-code-fork"></i>
-              Roles
-            </a>
-          </li>
+          <?php if (!empty($_SESSION['permisos'][3]['r'])) : ?>
 
-          <li><a><i class="fa fa-users"></i> Usuarios <span class="fa fa-chevron-down"></span></a>
-            <ul class="nav child_menu">
-              <li><a href="<?= base_url ?>/Usuarios">Lista</a></li>
-            </ul>
-          </li>
+            <li><a><i class="fa fa-users"></i> Usuarios <span class="fa fa-chevron-down"></span></a>
+              <ul class="nav child_menu">
+                <li><a href="<?= base_url ?>/Usuarios">Lista</a></li>
+              </ul>
+            </li>
 
-          <li><a><i class="fa fa-product-hunt"></i> Productos <span class="fa fa-chevron-down"></span></a>
-            <ul class="nav child_menu">
-              <li><a href="<?= base_url ?>/Productos">Lista</a></li>
-            </ul>
-          </li>
+          <?php endif ?>
 
-          <li><a><i class="fa fa-table"></i> Catalogos <span class="fa fa-chevron-down"></span></a>
-            <ul class="nav child_menu">
-              <li><a href="index.html">Categorias</a></li>
-              <li><a href="index2.html">Slider</a></li>
-              <li><a href="index3.html">Productos</a></li>
-            </ul>
-          </li>
+          <?php if (!empty($_SESSION['permisos'][4]['r'])) : ?>
 
+            <li><a><i class="fa fa-product-hunt"></i> Productos <span class="fa fa-chevron-down"></span></a>
+              <ul class="nav child_menu">
+                <li><a href="<?= base_url ?>/Productos">Lista</a></li>
+              </ul>
+            </li>
+
+          <?php endif ?>
+
+          <?php if (!empty($_SESSION['permisos'][5]['r'])) : ?>
+
+            <li><a><i class="fa fa-table"></i> Categorias <span class="fa fa-chevron-down"></span></a>
+              <ul class="nav child_menu">
+                <li><a href="<?= base_url ?>/Categorias">Lista</a></li>
+              </ul>
+            </li>
+
+
+
+
+          <?php endif ?>
         </ul>
       </div>
 

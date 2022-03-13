@@ -1,6 +1,40 @@
 <?php
+
+use FTP\Connection;
+
 class DB extends Conexion
 {
+
+
+    public static function consutarSQL($query)
+    {
+        $link = new Conexion();
+        $link =  $link->conect();
+        $resultado = $link->query($query);
+        $array = [];
+
+        while ($registro = $resultado->fetch(PDO::FETCH_ASSOC)) {
+            $array[] = $registro;
+        }
+
+        $resultado->closeCursor();
+        return $array;
+    }
+
+    /**
+    *
+    * Cosultar de forma plana un SQL 
+    * @param string $sql
+    *
+    */
+    
+
+    public static function SQL($query)
+    {
+        $resultado = self::consutarSQL($query);
+        return $resultado;
+    }
+
     /**
      *
      * Listar registros desde la base de datos o un solo registro
