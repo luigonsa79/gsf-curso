@@ -5,6 +5,7 @@ class Roles extends Controller
     public function __construct()
     {
         parent::__construct();
+        Permisos::getPermisos(CATEGORIAS);
     }
 
 

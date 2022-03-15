@@ -4,6 +4,7 @@ class Productos extends Controller
   public function __construct()
   {
     parent::__construct();
+    Permisos::getPermisos(PRODUCTOS);
   }
 
   public function index()

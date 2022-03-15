@@ -5,6 +5,16 @@ const base_url = 'http://localhost/gsf-curso';
 define('SITE_LANG', 'es');
 
 /* ----------------------------------------------------- */
+/*             CONSTANTES PAGINAS DE NAVEGACION                  */
+/* ----------------------------------------------------- */
+
+const PERFIL = 1;
+const DASHBOARD = 2;
+const USUARIOS = 3;
+const ROLES = 4;
+const PRODUCTOS = 5;
+const CATEGORIAS = 6;
+/* ----------------------------------------------------- */
 /*             CONSTANTES PARA CONEXION DB                  */
 /* ----------------------------------------------------- */
 

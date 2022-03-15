@@ -47,8 +47,30 @@ headerAdmin($data);
             <div class="clearfix"></div>
           </div>
           <div class="x_content">
-           Pagina de perfil del usuario
-           
+            Pagina de perfil del usuario
+            <hr>
+
+            <?php if (Permisos::create()) : ?>
+              <a href="<?= base_url ?>/usuarios/nuevo">Nuevo</a>
+            <?php endif ?>
+
+            <?php if (Permisos::updater()) : ?>
+              <a href="<?= base_url ?>/usuarios/nuevo">Editar</a>
+            <?php endif ?>
+
+            <?php if (Permisos::deleter()) : ?>
+              <a href="<?= base_url ?>/usuarios/nuevo">Eliminar</a>
+            <?php endif ?>
+
+            <hr>
+
+            <?php if (Permisos::read()) : ?>
+              <div>
+                aadsfasldfkasdfsadlkfasdklfkasdlkfldskfsdfasd
+                asdfsdfasdfdsaf
+              </div>
+            <?php endif ?>
+
           </div>
         </div>
       </div>

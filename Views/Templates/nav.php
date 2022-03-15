@@ -1,58 +1,10 @@
     <!--sidebar start-->
     <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+
       <div class="menu_section">
         <h3>Administracion GSF</h3>
         <ul class="nav side-menu">
-          <li>
-            <a href="<?= base_url ?>/Perfil">
-              <!-- todos entran -->
-              <i class="fa fa-cogs"></i>
-              Perfil
-            </a>
-          </li>
-
-          <?php if (!empty($_SESSION['permisos'][2]['r'])) : ?>
-            <li>
-              <a href="<?= base_url ?>/Dashboard">
-                <i class="fa fa-laptop"></i>
-                Dashboard
-              </a>
-            </li>
-          <?php endif ?>
-
-
-          <?php if (!empty($_SESSION['permisos'][3]['r'])) : ?>
-
-            <li><a><i class="fa fa-users"></i> Usuarios <span class="fa fa-chevron-down"></span></a>
-              <ul class="nav child_menu">
-                <li><a href="<?= base_url ?>/Usuarios">Lista</a></li>
-              </ul>
-            </li>
-
-          <?php endif ?>
-
-          <?php if (!empty($_SESSION['permisos'][4]['r'])) : ?>
-
-            <li><a><i class="fa fa-product-hunt"></i> Productos <span class="fa fa-chevron-down"></span></a>
-              <ul class="nav child_menu">
-                <li><a href="<?= base_url ?>/Productos">Lista</a></li>
-              </ul>
-            </li>
-
-          <?php endif ?>
-
-          <?php if (!empty($_SESSION['permisos'][5]['r'])) : ?>
-
-            <li><a><i class="fa fa-table"></i> Categorias <span class="fa fa-chevron-down"></span></a>
-              <ul class="nav child_menu">
-                <li><a href="<?= base_url ?>/Categorias">Lista</a></li>
-              </ul>
-            </li>
-
-
-
-
-          <?php endif ?>
+          <?php echo Permisos::nav(); ?>
         </ul>
       </div>
 

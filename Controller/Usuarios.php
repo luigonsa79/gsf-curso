@@ -5,7 +5,7 @@ class Usuarios extends Controller
     public function __construct()
     {
         Auth::noAuth();
-        Permisos::get_permisos(3);
+        Permisos::getPermisos(USUARIOS);
         parent::__construct();
     }
 
