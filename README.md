@@ -230,3 +230,10 @@ https://github.com/luigonsa79/gsf-curso/archive/refs/tags/video37-40.zip
 
 1.Implementando datatable en la vista de usuarios
 2.Subir repositorio al git - Control de versiones.
+https://github.com/luigonsa79/gsf-curso/archive/refs/tags/video41.zip
+
+# VIDEO #42
+
+1.Personalizando el datatable con mas opciones 
+2.Subir repositorio al git - Control de versiones.
+https://github.com/luigonsa79/gsf-curso/archive/refs/tags/video41.zip
