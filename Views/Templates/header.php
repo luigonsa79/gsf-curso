@@ -17,6 +17,7 @@
     <link href="<?= CSS ?>/custom.min.css" rel="stylesheet">
     <!-- plugins -->
     <link href="<?= PLUGINS ?>/noty/noty.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.5/af-2.3.7/b-2.2.2/b-html5-2.2.2/b-print-2.2.2/r-2.2.9/datatables.min.css"/>
     <!-- Mis estilos -->
     <link href="<?= ASSETS ?>/app/css/app.css" rel="stylesheet">
 

@@ -224,3 +224,9 @@ https://github.com/luigonsa79/gsf-curso/archive/refs/tags/vide36usuarios.zip
 
 1.Permisos por Roles
 2.Subir repositorio al git - Control de versiones.
+https://github.com/luigonsa79/gsf-curso/archive/refs/tags/video37-40.zip
+
+# VIDEO #41
+
+1.Implementando datatable en la vista de usuarios
+2.Subir repositorio al git - Control de versiones.
