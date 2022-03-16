@@ -16,11 +16,15 @@ document.addEventListener(
       },
       // datos desde el servidor
       columns: [
-        { data: "id" },
-        { data: "nombre" },
-        { data: "correo" },
+        { data: "id_usuario" },
+        { data: "nombre_usuario" },
+        { data: "email" },
         { data: "rol" },
-        { data: "estado" },
+        { data: "is_activo" },
+        {
+          defaultContent:
+            "<button class='btn btn-warning btn-xs'><i class='fa fa-edit'></i></button><button class='btn btn-danger btn-xs'><i class='fa fa-remove'></i></button>",
+        },
       ],
       // ocultar columnas
       columnDefs: [
@@ -58,12 +62,12 @@ document.addEventListener(
           className: "btn btn-primary",
         },
       ],
-      lengthMenu:[
-        [5,10,25,50, -1],
-        [5,10,25,50, "All"],
+      lengthMenu: [
+        [5, 10, 25, 50, -1],
+        [5, 10, 25, 50, "All"],
       ],
-      iDisplayLength:10,
-      order:[[0,"desc"]],
+      iDisplayLength: 5,
+      order: [[0, "desc"]],
     });
   },
   false

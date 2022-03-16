@@ -236,4 +236,9 @@ https://github.com/luigonsa79/gsf-curso/archive/refs/tags/video41.zip
 
 1.Personalizando el datatable con mas opciones 
 2.Subir repositorio al git - Control de versiones.
-https://github.com/luigonsa79/gsf-curso/archive/refs/tags/video41.zip
+https://github.com/luigonsa79/gsf-curso/archive/refs/tags/video42.zip
+
+# VIDEO #43
+
+1.Enviando datos desde el controlador a datatable 
+2.Subir repositorio al git - Control de versiones.

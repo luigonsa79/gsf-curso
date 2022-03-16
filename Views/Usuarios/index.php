@@ -28,6 +28,7 @@ headerAdmin($data);
                   <th>Correo</th>
                   <th>Rol</th>
                   <th>Status</th>
+                  <th>Acciones</th>
                 </tr>
               </thead>
               <tbody>

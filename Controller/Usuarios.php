@@ -21,7 +21,23 @@ class Usuarios extends Controller
     }
     public function all()
     {
-        $arrJson = [['id' => 1, 'nombre' => 'Luis Gonzalez', 'correo' => 'admin@admin.com', 'rol' => 'root', 'estado' => 'Activo',],['id' => 2, 'nombre' => 'Ruis Gonzalez', 'correo' => 'admin@admin.com', 'rol' => 'root', 'estado' => 'Activo',],['id' => 3, 'nombre' => 'Auis Gonzalez', 'correo' => 'admin@admin.com', 'rol' => 'root', 'estado' => 'Activo',],['id' => 4, 'nombre' => 'Yuis Gonzalez', 'correo' => 'admin@admin.com', 'rol' => 'root', 'estado' => 'Activo',],['id' => 5, 'nombre' => 'Wuis Gonzalez', 'correo' => 'admin@admin.com', 'rol' => 'root', 'estado' => 'Activo',],['id' => 6, 'nombre' => 'Buis Gonzalez', 'correo' => 'admin@admin.com', 'rol' => 'root', 'estado' => 'Activo',],['id' => 7, 'nombre' => 'Tuis Gonzalez', 'correo' => 'admin@admin.com', 'rol' => 'root', 'estado' => 'Activo',],['id' => 8, 'nombre' => 'Auis Gonzalez', 'correo' => 'admin@admin.com', 'rol' => 'root', 'estado' => 'Activo',],['id' => 9, 'nombre' => 'Vuis Gonzalez', 'correo' => 'admin@admin.com', 'rol' => 'root', 'estado' => 'Activo',],['id' => 10, 'nombre' => 'Zuis Gonzalez', 'correo' => 'admin@admin.com', 'rol' => 'root', 'estado' => 'Activo',],['id' => 11, 'nombre' => 'Xuis Gonzalez', 'correo' => 'admin@admin.com', 'rol' => 'root', 'estado' => 'Activo',]];
+        $arrJson = [];
+        $users = DB::SQL("SELECT u.id_usuario, r.id, r.nombre as rol, u.nombre as nombre_usuario, u.email, u.is_activo FROM usuarios u INNER JOIN roles r ON u.id_rol = r.id");
+
+        if (empty($users)) {
+            $arrJson = ['msg' => 'No se encontraron registros'];
+        } else {
+
+            for ($i = 0; $i < count($users); $i++) {
+                if ($users[$i]['is_activo'] == 1) {
+                    $users[$i]['is_activo'] = '<span class="badge badge-success">Activo</span>';
+                } else {
+                    $users[$i]['is_activo'] = '<span class="badge badge-danger">Inactivo</span>';
+                }
+            }
+
+            $arrJson = $users;
+        }
 
         echo json_encode($arrJson, JSON_UNESCAPED_UNICODE);
     }
