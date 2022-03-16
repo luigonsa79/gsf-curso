@@ -22,7 +22,7 @@ class Usuarios extends Controller
     public function all()
     {
         $arrJson = [];
-        $users = DB::SQL("SELECT u.id_usuario, r.id, r.nombre as rol, u.nombre as nombre_usuario, u.email, u.is_activo FROM usuarios u INNER JOIN roles r ON u.id_rol = r.id");
+        $users = UsuariosModel::all();
 
         if (empty($users)) {
             $arrJson = ['msg' => 'No se encontraron registros'];
@@ -40,5 +40,19 @@ class Usuarios extends Controller
         }
 
         echo json_encode($arrJson, JSON_UNESCAPED_UNICODE);
+    }
+
+    public function nuevo()
+    {
+        $data['page_name'] = "Nuevo Usuario";
+        $data['function_js'] = "Usuarios.js";
+        $this->views->getView($this, 'nuevo', $data);
+    }
+
+    public function editar()
+    {
+        $data['page_name'] = "Editar Usuario";
+        $data['function_js'] = "Usuarios.js";
+        $this->views->getView($this, 'editar', $data);
     }
 }

@@ -23,7 +23,7 @@ document.addEventListener(
         { data: "is_activo" },
         {
           defaultContent:
-            "<button class='btn btn-warning btn-xs'><i class='fa fa-edit'></i></button><button class='btn btn-danger btn-xs'><i class='fa fa-remove'></i></button>",
+            "<button type='button' class='editarFnt btn btn-warning btn-xs'><i class='fa fa-edit'></i></button><button type='button' class='eliminarFnt btn btn-danger btn-xs'><i class='fa fa-remove'></i></button>",
         },
       ],
       // ocultar columnas
@@ -72,3 +72,11 @@ document.addEventListener(
   },
   false
 );
+
+// editar
+$("#tblUsuarios tbody").on("click", "button.editarFnt", async function () {
+  let data_tabla = tblUsuarios.row($(this).parents("tr")).data();
+  console.log(data_tabla);
+  let id_usuario = data_tabla.id_usuario;
+  window.location.href = `${base_url}/usuarios/editar/${id_usuario}`;
+});

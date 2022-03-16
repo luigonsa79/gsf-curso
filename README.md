@@ -242,3 +242,10 @@ https://github.com/luigonsa79/gsf-curso/archive/refs/tags/video42.zip
 
 1.Enviando datos desde el controlador a datatable 
 2.Subir repositorio al git - Control de versiones.
+https://github.com/luigonsa79/gsf-curso/archive/refs/tags/video43.zip
+
+# VIDEO #44
+
+1.Capturando el id del usuario para editar desde JAVA SCRIPT
+2.Subir repositorio al git - Control de versiones.
+https://github.com/luigonsa79/gsf-curso/archive/refs/tags/video43.zip
