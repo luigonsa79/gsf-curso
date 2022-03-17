@@ -248,4 +248,14 @@ https://github.com/luigonsa79/gsf-curso/archive/refs/tags/video43.zip
 
 1.Capturando el id del usuario para editar desde JAVA SCRIPT
 2.Subir repositorio al git - Control de versiones.
-https://github.com/luigonsa79/gsf-curso/archive/refs/tags/video43.zip
+https://github.com/luigonsa79/gsf-curso/archive/refs/tags/video44.zip
+
+# VIDEO #45
+
+1.Crear clase de Alerta en PHP para trabajar con Vistas
+2.Subir repositorio al git - Control de versiones.
+
+# VIDEO #46_PENDIENTE
+
+1.Crear clase para Redireccionar en PHP para trabajar con Vistas
+2.Subir repositorio al git - Control de versiones.

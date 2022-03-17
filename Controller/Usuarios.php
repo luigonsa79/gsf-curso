@@ -44,6 +44,7 @@ class Usuarios extends Controller
 
     public function nuevo()
     {
+        Alertas::new('Guardado', 'success');
         $data['page_name'] = "Nuevo Usuario";
         $data['function_js'] = "Usuarios.js";
         $this->views->getView($this, 'nuevo', $data);

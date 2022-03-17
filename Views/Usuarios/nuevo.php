@@ -22,6 +22,7 @@ headerAdmin($data);
           <div class="x_content">
 
             <p>Vista del Nuevo usuario</p>
+            <?php echo Alertas::mostraAlerta();?>
 
           </div>
         </div>
