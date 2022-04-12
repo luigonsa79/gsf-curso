@@ -4,7 +4,8 @@
       <div class="menu_section">
         <h3>Administracion GSF</h3>
         <ul class="nav side-menu">
-          <?php echo Permisos::nav(); ?>
+          <?php //echo Permisos::nav(); ?>
+          <?php echo Permisos::MenuMultinivel(); ?>
         </ul>
       </div>
 

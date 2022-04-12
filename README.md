@@ -254,8 +254,14 @@ https://github.com/luigonsa79/gsf-curso/archive/refs/tags/video44.zip
 
 1.Crear clase de Alerta en PHP para trabajar con Vistas
 2.Subir repositorio al git - Control de versiones.
+https://github.com/luigonsa79/gsf-curso/archive/refs/tags/video45.zip
 
-# VIDEO #46_PENDIENTE
+# VIDEO #46, #47
+
+1.Menu y SubMenu Dinamico en PHP
+2.Subir repositorio al git - Control de versiones.
+
+# VIDEO #48_PENDIENTE
 
 1.Crear clase para Redireccionar en PHP para trabajar con Vistas
 2.Subir repositorio al git - Control de versiones.

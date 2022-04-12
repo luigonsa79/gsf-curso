@@ -52,6 +52,39 @@ class Permisos
     }
   }
 
+  public static function MenuMultinivel()
+  {
+    $sql1 = "SELECT id, menu_id, titulo, page, icono FROM paginas WHERE `menu_id` IS NULL ";
+    $sql2 = "SELECT id, menu_id, titulo, page, icono FROM paginas WHERE `menu_id` != 0 ";
+
+    $menuPrincipal = DB::query($sql1);
+    $subMenus = DB::query($sql2);
+
+
+    foreach ($menuPrincipal as $menu) {
+      foreach ($subMenus as $subMenu) {
+        if ($menu['page'] == '#') {
+          if (!empty($_SESSION['permisos'][$menu['id']]['r'])) {
+            echo '<li>
+                    <a><i class="' . $menu['icono'] . '"></i> ' . $menu['titulo'] . ' <span class="fa fa-chevron-down"></span
+                    ></a>
+                    <ul class="nav child_menu" style="display: block">
+                      <li class="current-page"><a href="' . base_url . "/" . $subMenu['page'] . '"><i class="' . $subMenu['icono'] . '"></i> ' . $subMenu['titulo'] . '</a></li>
+                    </ul>
+                  </li>';
+          }
+        } else {
+          if (!empty($_SESSION['permisos'][$menu['id']]['r'])) {
+            echo '<li>
+                <a href="' . base_url . "/" . $menu['page'] . '"><i class="' . $menu['icono'] . '"></i> ' . $menu['titulo'] . '
+                </a>
+              </li>';
+          }
+        }
+      }
+    }
+  }
+
   public static function read()
   {
     if (!empty($_SESSION['permisosMod']['r'])) {
@@ -63,7 +96,6 @@ class Permisos
     if (!empty($_SESSION['permisosMod']['c'])) {
       return true;
     }
-    
   }
   public static function updater()
   {
