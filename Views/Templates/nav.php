@@ -5,7 +5,7 @@
         <h3>Administracion GSF</h3>
         <ul class="nav side-menu">
           <?php //echo Permisos::nav(); ?>
-          <?php echo Permisos::MenuMultinivel(); ?>
+          <?php echo Permisos::mostrarMenu(); ?>
         </ul>
       </div>
 

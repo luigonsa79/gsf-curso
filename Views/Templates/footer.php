@@ -39,6 +39,13 @@
   <!--cargar solo en la pagina page_functions_js personalizados desde el controlador-->
   <script src="<?= ASSETS ?>/app/js/<?= $data['function_js']; ?>"></script>
 
+  <script type="text/javascript">
+    // menu
+    $("li>a").click(function(e) {
+      $('li>ul>li>a').addClass('d-block');
+    });
+  </script>
+
   </body>
 
   </html>

@@ -80,3 +80,58 @@ $("#tblUsuarios tbody").on("click", "button.editarFnt", async function () {
   let id_usuario = data_tabla.id_usuario;
   window.location.href = `${base_url}/usuarios/editar/${id_usuario}`;
 });
+
+// eliminar
+$("#tblUsuarios tbody").on("click", "button.eliminarFnt", async function () {
+  let data_tabla = tblUsuarios.row($(this).parents("tr")).data();
+  // console.log(data_tabla);
+  let id_usuario = data_tabla.id_usuario;
+  console.log(id_usuario);
+  // window.location.href = `${base_url}/usuarios/editar/${id_usuario}`;
+
+  var n = new Noty({
+    text: "Esta seguro de eliminar este registro?",
+    type: "error",
+    theme: "metroui",
+    buttons: [
+      Noty.button("YES", "btn btn-success", async function () {
+        // console.log("borrar");
+
+        const datos = new FormData();
+
+        datos.append("id", id_usuario);
+
+        try {
+          const url = `${base_url}/Usuarios/destroy`;
+          const respuesta = await fetch(url, {
+            method: "POST",
+            body: datos,
+          });
+          const resultado = await respuesta.json();
+
+          if (resultado) {
+            // console.log(resultado);
+            new Noty({
+              type: "success",
+              text: `${resultado.msg}`,
+              layout: "topRight",
+              theme: "metroui",
+              timeout: 1500,
+            }).show();
+            window.location.href = `${base_url}/usuarios`;
+          }
+        } catch (error) {
+          console.log(error);
+        }
+
+        n.close();
+      }),
+
+      Noty.button("NO", "btn btn-error", function () {
+        // console.log("no se borro");
+        n.close();
+      }),
+    ],
+  });
+  n.show();
+});

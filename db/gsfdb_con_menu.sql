@@ -5,13 +5,13 @@
  Source Server Type    : MySQL
  Source Server Version : 100424
  Source Host           : localhost:3306
- Source Schema         : gsfdb
+ Source Schema         : gsf-curso-menu
 
  Target Server Type    : MySQL
  Target Server Version : 100424
  File Encoding         : 65001
 
- Date: 12/04/2022 16:22:09
+ Date: 14/04/2022 14:13:04
 */
 
 SET NAMES utf8mb4;
@@ -41,14 +41,14 @@ CREATE TABLE `paginas`  (
   `id` int NOT NULL AUTO_INCREMENT,
   `menu_id` int NULL DEFAULT NULL,
   `titulo` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `page` varchar(60) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '#',
+  `page` varchar(45) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT '#',
   `descripcion` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `icono` varchar(70) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `activo` int NOT NULL DEFAULT 1,
   `creado` datetime(0) NOT NULL,
   `actualizado` datetime(0) NOT NULL DEFAULT current_timestamp(0),
   PRIMARY KEY (`id`) USING BTREE,
-  INDEX `menu_submenu`(`menu_id`) USING BTREE,
+  INDEX `pagina_subpagina`(`menu_id`) USING BTREE,
   CONSTRAINT `paginas_ibfk_1` FOREIGN KEY (`menu_id`) REFERENCES `paginas` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE = InnoDB AUTO_INCREMENT = 8 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = DYNAMIC;
 
@@ -61,7 +61,7 @@ INSERT INTO `paginas` VALUES (3, NULL, 'Usuarios', 'usuarios', 'Administración 
 INSERT INTO `paginas` VALUES (4, NULL, 'Roles', 'roles', 'Informacion general de los roles de usuarios', 'fa fa-key', 1, '2022-03-13 23:10:43', '2022-03-13 16:12:57');
 INSERT INTO `paginas` VALUES (5, NULL, 'Productos', '#', 'Informacion de todos los productos', 'fa fa-product-hunt', 1, '2022-03-13 23:10:43', '2022-03-13 16:12:57');
 INSERT INTO `paginas` VALUES (6, NULL, 'Categorias', 'categorias', 'Informacion general de categorias', '', 1, '2022-03-13 23:10:43', '2022-03-13 16:12:57');
-INSERT INTO `paginas` VALUES (7, 5, 'Lista', 'productos', 'Lista de productos', 'fa fa-list', 1, '2022-04-12 23:08:58', '2022-04-12 15:09:42');
+INSERT INTO `paginas` VALUES (7, 5, 'Lista', 'productos', 'Crear nuevo producto', 'fa fa-list', 1, '2022-04-12 02:38:42', '2022-04-11 18:39:13');
 
 -- ----------------------------
 -- Table structure for permisos

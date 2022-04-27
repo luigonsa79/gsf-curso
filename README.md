@@ -260,6 +260,7 @@ https://github.com/luigonsa79/gsf-curso/archive/refs/tags/video45.zip
 
 1.Menu y SubMenu Dinamico en PHP
 2.Subir repositorio al git - Control de versiones.
+https://github.com/luigonsa79/gsf-curso/archive/refs/tags/video46y47.zip
 
 # VIDEO #48_PENDIENTE
 

@@ -81,3 +81,8 @@ function limpiar($datos)
 
     return $datos;
 }
+
+function to_obj($array)
+{
+    return json_decode(json_encode($array));
+}
