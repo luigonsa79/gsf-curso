@@ -46,12 +46,13 @@
   </label>
   <div class="col-md-6 col-sm-6 ">
     <select class="form-control" name="selStatus">
+  
 
-      <?php if ($usuario->is_activo === 1) : ?>
+      <?php if ($usuario->is_activo == 1) : ?>
         <option selected value="1">Activo</option>
         <option value="0">Inactivo</option>
         <option value="1">Activo</option>
-      <?php elseif ($usuario->is_activo === 0) : ?>
+      <?php elseif ($usuario->is_activo == 0) : ?>
         <option selected value="o">Inactivo</option>
         <option value="0">Inactivo</option>
         <option value="1">Activo</option>

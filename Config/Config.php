@@ -1,6 +1,6 @@
 <?php
 
-const base_url = 'http://localhost/gsf-curso';
+const base_url = 'http://localhost/gsf-curso-yt';
 
 define('SITE_LANG', 'es');
 
@@ -19,7 +19,7 @@ const CATEGORIAS = 6;
 /* ----------------------------------------------------- */
 
 const DB_HOST = "localhost";
-const DB_NAME = "gsfdb";
+const DB_NAME = "gsf-curso-yt";
 const DB_USER = "root";
 const DB_PASSWORD = "";
 const DB_CHARSET = "utf8";
