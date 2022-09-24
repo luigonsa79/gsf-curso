@@ -1,6 +1,7 @@
 document.querySelector("#loginForm").addEventListener("submit", function (e) {
   e.preventDefault();
-  login();
+//   login();
+  console.log("Hola");
 });
 
 async function login() {
