@@ -20,9 +20,9 @@ const CATEGORIAS = 6;
 /* ----------------------------------------------------- */
 
 const DB_HOST = "localhost";
-const DB_NAME = "gsf-curso-yt";
-const DB_USER = "root";
-const DB_PASSWORD = "";
+const DB_NAME = "gonzbwtj_gonzatech";
+const DB_USER = "gonzbwtj_gonzatech";
+const DB_PASSWORD = "Lu1s@2015";
 const DB_CHARSET = "utf8";
 
 /* ----------------------------------------------------- */
