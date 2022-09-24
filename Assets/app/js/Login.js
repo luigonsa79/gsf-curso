@@ -1,7 +1,7 @@
 document.querySelector("#loginForm").addEventListener("submit", function (e) {
   e.preventDefault();
 //   login();
-  console.log("Hola");
+  console.log("Hola mundo");
 });
 
 async function login() {
