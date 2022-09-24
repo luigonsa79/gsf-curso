@@ -1,6 +1,6 @@
-console.log("DDDDD");
+console.log("HIKA");
 document.querySelector("#loginForm").addEventListener("submit", function (e) {
-  e.preventDefault();
+  //e.preventDefault();
 //   login();
   console.log("Hola mundo");
 });
