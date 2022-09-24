@@ -1,4 +1,4 @@
-console.log("DDDDD);
+console.log("DDDDD");
 document.querySelector("#loginForm").addEventListener("submit", function (e) {
   e.preventDefault();
 //   login();
