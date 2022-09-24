@@ -1,5 +1,5 @@
 <?php
-// iniciamos session ggg
+// iniciamos session ggg hhh
 session_start();
 require_once('Config/Config.php');
 require_once 'Helpers/Helpers.php';
