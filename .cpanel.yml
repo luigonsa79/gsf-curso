@@ -2,4 +2,5 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/gonzbwtj/public_html/
+    - /bin/cp -R Assets $DEPLOYPATH
  
