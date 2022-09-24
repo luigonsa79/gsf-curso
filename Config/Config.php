@@ -1,6 +1,7 @@
 <?php
+// cambiar en el hosting la URL
 
-const base_url = 'http://localhost/gsf-curso-yt';
+const base_url = 'https://gonzacr.com';
 
 define('SITE_LANG', 'es');
 
